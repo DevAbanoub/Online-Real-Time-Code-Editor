@@ -1,0 +1,18 @@
+<html>
+ <head>
+  <title>Real Time Code Editor</title>
+  <link rel='stylesheet' type='text/css' href='style.css' />
+  <script>
+   function show(){
+   var src = document.getElementById('src').value;
+   document.getElementById('view-result').srcdoc = src;
+   }
+  </script>
+ </head>
+ <body>
+  <div id="content">
+   <textarea id="src" onkeyup="show()"></textarea>
+   <iframe id="view-result"></iframe>
+  </div>
+ </body>
+</html>
